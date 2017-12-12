@@ -1,3 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: white; }
+
+.container .company-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .container .company-details .company_card {
+    width: 300px;
+    height: 300px;
+    background: black;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .container .company-details .company_card .company_detail .company_logo {
+      width: 50%; }
 
 /*# sourceMappingURL=main.css.map */
