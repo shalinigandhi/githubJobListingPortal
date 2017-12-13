@@ -6,18 +6,29 @@
 a {
   display: inline-block;
   text-decoration: none;
-  color: white; }
+  color: #222; }
 
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  background: #efefef;
+  min-height: 100vh; }
   .container .buttons {
-    padding: 20px; }
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     .container .buttons .btn {
       border: none;
-      background: darkturquoise;
+      background: transparent;
       padding: 10px 15px;
       margin: 0 5px;
       border-radius: 5px;
@@ -30,23 +41,31 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    margin: 100px 20px 50px 20px; }
     .container .company-details .company_card {
-      width: 300px;
-      height: 300px;
-      background: black;
+      width: 350px;
+      height: 350px;
+      background: white;
       margin: 10px;
       padding: 10px;
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center; }
+      .container .company-details .company_card:hover {
+        box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2); }
       .container .company-details .company_card .company_detail .company_logo {
         width: 50%;
         margin-bottom: 10px; }
+      .container .company-details .company_card .company_detail .company_name {
+        font-weight: 600;
+        font-size: 18px;
+        text-transform: uppercase; }
       .container .company-details .company_card .job_detail {
         margin-top: 15px; }
         .container .company-details .company_card .job_detail p.job_location {
-          line-height: 1.5; }
+          margin: 8px 0; }
 
 /*# sourceMappingURL=main.css.map */

@@ -53,9 +53,9 @@ function createElements(url, logo, name, title, location, type) {
     company_card.href = url;
     company_logo.src = logo;
     company_name.textContent = name;
-    job_title.textContent = title;
-    job_location.textContent = location;
-    job_type.textContent = type;
+    job_title.textContent = 'Position: ' + title;
+    job_location.textContent = 'Location: ' + location;
+    job_type.textContent = 'Job Type: ' + type;
 
     return company_card;
 
