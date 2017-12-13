@@ -11,6 +11,24 @@ a {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .buttons {
+        padding: 20px;
+        .btn {
+            border: none;
+            background: darkturquoise;
+            padding: 10px 15px;
+            margin: 0 5px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
     .company-details {
         display: flex;
         flex-wrap: wrap;
@@ -22,6 +40,7 @@ a {
             height: 300px;
             background: black;
             margin: 10px;
+            padding: 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -29,7 +48,14 @@ a {
 
             .company_detail {
                 .company_logo {
-                    width: 50%;    
+                    width: 50%;
+                    margin-bottom: 10px;
+                }
+            }
+            .job_detail {
+                margin-top: 15px;
+                p.job_location {
+                    line-height: 1.5;
                 }
             }
         }
