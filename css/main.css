@@ -54,7 +54,8 @@ a {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      transition: 0.3s; }
       .container .company-details .company_card:hover {
         box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2); }
       .container .company-details .company_card .company_detail .company_logo {

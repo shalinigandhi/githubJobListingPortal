@@ -51,6 +51,7 @@ function createElements(url, logo, name, title, location, type) {
     job_type.className = "job_type";
 
     company_card.href = url;
+    company_card.setAttribute('target', '_blank');
     company_logo.src = logo;
     company_name.textContent = name;
     job_title.textContent = 'Position: ' + title;
@@ -66,7 +67,7 @@ function addJobDetails(jobs) {
     sectionElement.innerHTML = '';
 
     for (var i = 0; i < jobs.length; i++) {
-        var url = jobs[i].company_url;
+        var url = jobs[i].url;
         var logo = jobs[i].company_logo;
         var name = jobs[i].company;
         var title = jobs[i].title;
