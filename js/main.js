@@ -79,15 +79,7 @@ function addJobDetails(jobs) {
     }
 }
 
-function sort(sortBy) {
-    if (sortBy == 'name') {
-        sortByKey('company');
-    } else if (sortBy == 'location') {
-        sortByKey('location');
-    }
-}
-
-function sortByKey(key) {
+function sortByType(key) {
     jobs.sort(function(a, b) {
         var keyOne = a[key].toLowerCase();
         var keyTwo = b[key].toLowerCase();
@@ -103,4 +95,14 @@ function sortByKey(key) {
     });
     addJobDetails(jobs);
 }
+
+function filterJobType(jobType) {
+  var filteredJobs =  jobs.filter(function(job) {
+        if(job.type == jobType) {
+          return true;
+        }
+    });
+    addJobDetails(filteredJobs);
+}
+
 githubJobApi();

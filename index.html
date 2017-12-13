@@ -7,8 +7,11 @@
 <body>
     <main class="container">
         <div class="buttons">
-            <button class="btn" onclick="sort('name')">Sort By Company Name</button>
-            <button class="btn" onclick="sort('location')">Sort By Location</button>
+            <button class="btn" onclick="sortByType('company')">Sort By Company Name</button>
+            <button class="btn" onclick="sortByType('location')">Sort By Location</button>
+            <button class="btn" onclick="filterJobType('Full Time')">Full Time</button>
+            <button class="btn" onclick="filterJobType('Part Time')">Part Time</button>
+            <button class="btn" onclick="filterJobType('Contract')">Contract</button>
         </div>
         <section class="company-details"></section>
     </main>
